@@ -1,0 +1,10 @@
+[package]
+
+name = "hello-world"
+version = "0.0.1"
+authors = ["Lance Ball <lball@redhat.com>"]
+
+
+[dependencies.semver]
+
+git = "https://github.com/rust-lang/semver.git"
