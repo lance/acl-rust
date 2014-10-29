@@ -306,6 +306,59 @@ fn main() {
 }</pre>
 </section>
 
+<section>
+  <h2>Packaging: Crates &amp; Modules</h2>
+  <pre class="prettyprint">fn main() {
+    hello::print_hello();
+}
+
+mod hello {
+    pub fn print_hello() {
+        println!("Hello, world!")
+    }
+}
+</pre>
+</section>
+
+<section>
+  <h2>Builtin Testing</h2>
+  <pre class="prettyprint">
+//
+// #[test] is a rust attribute that tells 
+// the compiler this is a test
+//
+#[test]
+fn math_checks_out() {
+    let result = add_three_times_four(5i);
+
+    assert_eq!(32i, result);
+}
+</pre>
+</section>
+
+<section>
+  <h2>Other Interesting Stuff</h2>
+  <ul>
+    <li>Pattern Matching</li>
+    <li>Attributes</li>
+    <li>Generics</li>
+    <li>Closures &amp; Procs</li>
+    <li>Iterators &amp; Consumers</li>
+    <li>Trait/Impl</li>
+    <li>Standard Library</li>
+  </ul>
+</section>
+
+<section>
+  <h2>References</h2>
+  <ul>
+    <li><a href="http://rust-lang.org">http://rust-lang.org</a></li>
+    <li><a href="http://doc.rust-lang.org/">http://doc.rust-lang.org</a></li>
+    <li><a href="http://play.rust-lang.org">http://play.rust-lang.org</a></li>
+    <li><a href="http://doc.crates.io">http://doc.crates.io</a></li>
+  </ul>
+</section>
+
 <!-- Maybe a font from http://www.google.com/webfonts ? -->
 <link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700' rel='stylesheet' type='text/css'>
 
